@@ -1,4 +1,18 @@
 <div class="table">
+    <div class="filter">
+        <div>
+            <div class="first">
+                <label><input type="text" placeholder="بحث في ..."><img src="../../../assets/image/search.svg" alt="search"></label>
+                <div class="setting">
+                    <img src="../../../assets/image/setting-4.svg" alt="setting">
+                </div>
+                <div class="setting">
+                    <img src="../../../assets/image/arrow-3.svg" alt="arrow">
+                </div>
+            </div>
+            <button><span>+</span>{{'conatactData.add'|translate}} </button>
+        </div>
+    </div>
     <table cdkDropList (cdkDropListDropped)="drop($event)">
         <tr>
             <th>{{'conatactData.id'|translate}}</th>

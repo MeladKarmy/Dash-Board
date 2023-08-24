@@ -22,6 +22,7 @@
         "setting": "Setting"
     },
     "conatactData":{
+        "add":"Add new",
         "id":"ID",
         "fullName":"FullName",
         "email":"Email",

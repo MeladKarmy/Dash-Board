@@ -3,6 +3,76 @@ div.table
   width: 100%;
   overflow: auto;
 }
+div.filter > div
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+div.first
+{
+  display: flex;
+  align-items: center;
+}
+div.filter label {
+  position: relative;
+}
+div.filter div.first label img
+{
+  position: absolute;
+  display: inline-block;
+  right: .4rem;
+  top: .6rem;
+}
+div.filter input
+{
+  border: thin solid black;
+  border-radius: .3rem;
+  padding: .5rem;
+  padding-right: 2rem;
+}
+div.filter input::placeholder
+{
+  color: rgba(146, 161, 173, 0.40);
+  font-size: 0.625rem;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: .3rem;
+}
+div.filter div.first div.setting
+{
+  padding: .65rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-right: 1rem;
+  background-color: #92A1AD66;
+  border-radius: .2rem;
+}
+div.setting:hover
+{
+  background-color: var(--navColorActive) !important;
+}
+div.filter > div button
+{
+  display: block;
+  padding: .5rem 1.5rem;
+  border: none;
+  background-color: #92A1AD66;
+  border-radius: .3rem;
+  color: #1C1C28;
+  font-size: 0.75rem;
+  font-weight: bold;
+  line-height: 1.5rem; 
+}
+div.filter > div button:hover
+{
+  background-color: var(--navColorActive) !important;
+
+}
+div.filter > div button span
+{
+  margin-left: .3rem;
+}
 table
 {
   width: 100%;

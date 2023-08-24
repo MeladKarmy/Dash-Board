@@ -1,0 +1,65 @@
+/* .container>div{
+    text-align: center;
+
+} */
+div.card
+{
+    padding: .7rem;
+    margin-bottom: 1rem;
+    border-radius: 0.65625rem;
+    background: #FFF6E3;
+}
+div.card:hover , div.card:hover h3 ,div.card:hover h6 
+{
+    background-color: #7661E2;
+    color:var(--whiteColor);
+
+}
+div.card h3{
+    color: #1C1C28;
+    font-size: 0.65625rem;
+    font-weight: 500;
+    line-height: normal;
+}
+div.card h6{
+    color: #76778B;
+    font-family: Inter;
+    font-size: 0.65625rem;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+}
+div.card h6 span
+{
+    display: block;
+    margin-right: .3rem;
+}
+div.card .sub-card
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.2rem;
+}
+div.card .sub-card img{
+    display: block;
+    cursor: pointer;
+}
+div.card .sub-card > img{
+    background-color: var(--whiteColor);
+    padding: .42rem .56rem;
+    border-radius: 0.70313rem;
+
+
+}
+
+div.card .sub-card div:first-child{
+    display: flex;
+}
+div.card .sub-card div:first-child p
+{
+    margin-right: .3rem;
+    cursor: pointer;
+
+}

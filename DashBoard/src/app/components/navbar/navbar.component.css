@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    direction: rtl;
+}
+.menu .logo img
+{
+   margin: 1.12rem 3.41rem 6rem 2.61rem;
+   z-index: 10;
+}
+.menu .tabs h5 {
+    color: var(--navText);
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.3125;
+    margin-right: 1.34rem ;
+}
+.menu .tabs h5:nth-child(2)
+{
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+}
+.menu .tabs ul{
+    margin-top: 1.27rem;
+}
+.menu .tabs li {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: .42rem;
+    cursor: pointer;
+}
+
+.menu .tabs li div.icon{
+    position: relative;
+    width: 3.5625rem;
+    height: 2.625rem;
+    border-radius: 2.8125rem 0rem 0rem 2.8125rem;
+    background: var(--whiteColor) ;
+    margin-left: .41rem;
+}
+.menu .tabs li a{
+    color: var(--navMainText);
+    font-size: 0.84375rem;
+    font-weight: 400;
+    line-height: 1.3125rem;
+}
+.activeIcone{
+    background: var(--navColorActive) !important;
+}
+.menu .tabs li div.icon svg{
+    position: absolute;
+    top: .66rem;
+    bottom: .61rem;
+    right: 1.41rem;
+    left: .8rem;
+    width: 1.35938rem;
+    height: 1.35938rem;
+}
+
+.menu .tabs div.link-drowp-down
+{
+    align-self: start;
+    margin-top: .6rem;
+}
+.menu .tabs div.drowpdown div:first-child{
+    display: flex;
+}
+.menu div.drowpdown div:first-child span
+{
+    display: block;
+}
+
+.menu div.drowpdown div:first-child img{
+    margin-top: .3rem;
+    margin-right: 7rem;
+    display: block;
+}
+
+.menu .tabs li div.link{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menu .tabs li div.tab {
+    position: relative;
+}
+.menu .tabs li div.tab svg{
+    margin-left: .78rem;
+}
+.menu .tabs li div.links a{
+    display: block;
+    color: var(--navMainText);
+    font-size: 0.84375rem;
+    font-weight: 400;
+    line-height: 1.3125rem;
+    margin-bottom: .8rem;
+}
+.menu .tabs li div.links {
+    position: absolute;
+    min-width:max-content ;
+    top: -.3rem;
+    right: .78rem;
+}
+.menu .tabs li div.links a:nth-child(2){
+    margin-bottom: .65rem;
+}
+.sub-drowpdown
+{
+    margin-top: 2rem;
+}

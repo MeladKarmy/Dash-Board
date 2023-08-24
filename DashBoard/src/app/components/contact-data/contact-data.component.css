@@ -1,0 +1,118 @@
+div.table
+{
+  width: 100%;
+  overflow: auto;
+}
+table
+{
+  width: 100%;
+  text-align: center;
+  color:var(--tableText);
+  color: #5A5A67;
+  font-size: 0.64888rem;
+  font-weight: 400;
+  line-height: 1.00938rem; 
+}
+table th{
+  padding: 1rem;
+}
+table tr:hover:not(tr:first-child){
+  background-color: var(--tableHover);
+}
+table th{
+  line-height: 1.00938rem;
+}
+th:last-child svg{
+  padding: .31rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 0.375rem;
+  background: var(--tableBlue);
+}
+th:last-child svg path{
+  width: 0.625rem;
+  height: 0.625rem;
+}
+table td div.flex
+{
+  display: flex;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+}
+table td div.flex span
+{
+  display: block;
+  margin-right: .25rem;
+  width: 1.1875rem;
+  height: 1.1875rem;
+  border-radius: 0.14844rem;
+  font-size: 0.59375rem;
+  font-weight: 400;
+  line-height: 0.89063rem; 
+}
+table td div.flex span.day
+{
+  background: var(--tableBlue);
+  color:var(--whiteColor);
+}
+table td div.flex span.dayoff
+{
+  background:var(--whiteColor);
+  color: #BBBEC2;
+}
+table td.file img
+{
+  width: 100%;
+  height: 100%;
+}
+#relative
+{
+  position: relative;
+}
+div.choice
+{
+  margin-top: .5rem;
+  position: absolute;
+  width: 10.125rem;
+  height: 9.5rem;
+  color: #BBBEC2;
+  border-radius: 0.18638rem;
+  background: #FFF;
+  box-shadow: 0px 10.73493766784668px 23.855417251586914px 0px rgba(112, 144, 176, 0.12);
+  z-index: 10;
+  top: 1.7rem;
+  left: 2.3rem;
+}
+div.choice div{
+  padding: .4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #6C6C6C;
+  font-size: 0.52181rem;
+  font-weight: 400;
+  line-height: 0.67094rem; 
+}
+div.choice div input
+{
+  display: block;
+  margin-right: auto;
+}
+div.choice div label
+{
+ margin-right: .7rem;
+}
+div.choice div img{
+  display: block;
+}
+@media screen and (max-width:768px) {
+  table th:nth-child(1),
+  table td:nth-child(1),
+  table th:nth-child(3),
+  table td:nth-child(3),
+  table th:nth-child(4),
+  table td:nth-child(4)
+  { display: none; }
+  
+}

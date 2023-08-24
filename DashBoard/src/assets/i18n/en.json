@@ -1,0 +1,67 @@
+{
+    "nav":{
+        "main":"Main",
+        "menu1":
+        {
+            "main":"Menu 1",
+            "tab1" :"Menu mini",
+            "tab2" :"Menu mini",
+            "tab3" :"Menu mini"
+        },
+        "menu2":
+        {
+            "main":"Menu 2",
+            "tab1" :"Menu mini",
+            "tab2" :"Menu mini",
+            "tab3" :"Menu mini"
+        },
+        "menu3":"Menu 3",
+        "menu4":"Menu 4",
+        "acount":"acount",
+        "help": "Help",
+        "setting": "Setting"
+    },
+    "conatactData":{
+        "id":"ID",
+        "fullName":"FullName",
+        "email":"Email",
+        "days":"Days of Work",
+        "nameslice":"full Name and this more 20 char",
+        "name":"New full Name",
+        "day":{
+            "saturday":"Sa",
+            "sunday":"Su",
+            "monday":"Mo",
+            "tuesday":"Tu",
+            "wednesday":"We",
+            "Thursday":"Th",
+            "friday":"Fr"
+
+        },
+        "file":"Files on Working",
+        "settingIcon":{
+            "header":"control on table"
+        }
+    },
+    "personalData":{
+        "firstEmplee":"First Emplee",
+        "date":"10 May - 10 June",
+        "title":"First person",
+        "subTitle":{
+            "title1":"read number 1",
+            "title2":"read number 2",
+            "title3":"read number 3"
+        },
+        "analytics":{
+            "title":"Analytics",
+            "type":"Device",
+            "subTitle1":"Choice One",
+            "subTitle2":"Choice Two"
+        },
+        "reads":{
+            "read1":"read Number 1",
+            "read2":"read Number 2",
+            "read3":"read Number 3"
+        }
+    }
+}

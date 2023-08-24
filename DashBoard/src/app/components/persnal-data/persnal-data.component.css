@@ -1,0 +1,231 @@
+main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+}
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+main div.personal
+{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: fit-content;
+}
+main div.personal h4
+{
+    color:  #23262F;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.875rem; 
+    margin-bottom:2rem;
+    margin-top: 1.67rem;
+}
+main div.personal div.data {
+    margin-bottom: 2rem;
+}
+main div.personal div.data p
+{
+    color: #787486;
+    font-size: 0.4625rem;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: .52rem;
+}
+main div.personal div.data h6{
+    color: var(--blackColor);
+    font-family: Inter;
+    font-size: 0.84375rem;
+    font-weight: 700;
+    line-height: normal;
+}
+main div.image 
+{
+    margin-right: .85rem;
+}
+main div.image p{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 2.5rem;
+    color: #787486;
+    font-size: 0.5625rem;
+    font-weight: 400;
+    line-height: normal;
+
+}
+main div.image p img{
+    display: inline-block;
+    margin-right: .5rem;
+    margin-top: .3rem;
+   
+}
+main div.image div.details{
+
+    position: relative;
+    width: 9.62794rem;
+    height: 9.46994rem;
+    width: 100%;
+}
+main div.image div.details img
+{
+    margin-top: 1.6rem;
+    
+    display: block;
+}
+main div.image div.details h6{
+    position: absolute;
+    top: 72%;
+    right:33%;
+}
+
+
+main div.analytics{
+    margin: 0.7;
+    margin: auto;
+}
+main div.analytics h4
+{
+    text-align: right;
+    padding-right: 2rem;
+    color:  #23262F;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.875rem; 
+    
+}  
+main div.analytics div.image-analytics{
+    text-align: center;
+    position: relative;
+    width: 9.62794rem;
+    height: 9.46994rem;
+    margin:1.07rem 4.4rem 1.3rem;
+}
+main div.analytics div.image-analytics img
+{
+    display: block;
+    width: 100%;
+}
+main div.analytics div.image-analytics h6{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #6B7181;
+    font-size: 0.70494rem;
+    font-weight: 400;
+    line-height: 1.00706rem;
+
+}
+main div.analytics div.image-analytics h6 span{
+    color: #1C1C28;
+    font-family: Poppins;
+    font-size: 1.00706rem;
+    font-weight: 500;
+    line-height: 1.00706rem; 
+}
+main div.analytics div.choice {
+    
+   display: flex;
+   justify-content:space-around;
+
+}
+main div.analytics div.flex
+{
+    display: flex;
+    align-items: flex-start;
+    gap: .7rem;
+    
+}
+main div.analytics div.flex img
+{
+    display: block;
+}
+main div.analytics div.choice h2
+{
+    color: #1C1C28;
+    font-family: Poppins;
+    font-size: 0.90819rem;
+    font-weight: 600;
+    line-height: 0.90819rem; 
+    margin-bottom: .5rem;
+}
+main div.analytics div.choice h3
+{
+    color: #B6BACA;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 0.90819rem;     
+}
+main .main-three-reads{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.7rem;
+    margin: auto;
+}
+main .main-three-reads .card{
+    background-color: #FF9A3E;
+    display: flex;
+    align-items: center;
+    border-radius: 0.9375rem;
+    color: var(--whiteColor);
+    margin-bottom: 1rem;
+}
+main .main-three-reads .subcard
+{
+    padding-right:.7rem ;
+}
+main .main-three-reads .subcard h3{
+    display: flex;
+    align-items: center;
+    font-size: 0.70313rem;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.02344rem;
+    
+}
+main .main-three-reads .subcard h3:nth-child(2)
+{
+    font-family: Inter;
+    font-size: 1.17188rem;
+    font-weight: 500;
+}
+main .main-three-reads .subcard h3 img
+{
+    margin-right: .1rem;
+}
+
+main .main-three-reads .subcard img
+{
+    display: inline-block;
+}
+main .main-three-reads .subcard>img{
+    display:block;
+}
+main .main-three-reads .card:nth-child(2){
+    background-color: #7E72DD;
+
+}
+main .main-three-reads .card:nth-child(3){
+    background-color: #4EDDA4;
+
+}
+@media (min-width: 576px) {
+
+}
+@media (min-width: 768px) {
+    
+   
+}
+@media (min-width: 992px) {
+   
+}
+@media (min-width: 1200px) {
+   
+}
+

@@ -176,6 +176,40 @@ div.choice div label
 div.choice div img{
   display: block;
 }
+div.pagination
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+div.pagination div.cont *
+{
+  display: inline-block;
+  margin-left: .5rem;
+}
+div.pagination div.cont button
+{
+  padding:.3rem .5rem;
+
+}
+div.pagination div.btn button
+{
+  display: inline-block;
+  width: 1.29775rem;
+height: 1.29775rem;
+background-color: var(--whiteColor);
+margin-right: .5rem;
+text-align: center;
+border: none;
+border-radius: .2rem;
+cursor: pointer;
+}
+div.pagination div.btn button:nth-child(2)
+{
+  background-color: var(--tableBlue) !important;
+
+}
 @media screen and (max-width:768px) {
   table th:nth-child(1),
   table td:nth-child(1),

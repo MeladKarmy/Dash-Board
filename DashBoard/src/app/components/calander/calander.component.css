@@ -1,0 +1,121 @@
+.lang{
+    background-color: aliceblue;
+    width: fit-content;
+    height: fit-content;
+    color: #1C1C28;
+    font-size: 2rem;
+}
+div.clander{
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+}
+div.first-card
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.first-card .sub{
+    display: flex;
+    align-items: center;
+}
+div.first-card .sub:first-child *{
+    margin-left: 1rem;
+}
+div.first-card .sub:nth-child(2) *{
+    margin-left: .5rem;
+}
+div.first-card .sub:nth-child(2) span
+{
+    margin-bottom: .3rem;
+}
+div.clander div.secand-card
+{
+    display: flex;
+    justify-content: center;
+}
+div.clander div.secand-card div.day{
+    width: 2.73125rem;
+    height: 4.73438rem;
+    background-color: var(--whiteColor);
+    border-radius: 0.5625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    color: #292D32;
+    font-size: 0.46875rem;
+    font-weight: 400;
+    line-height: normal;
+    padding: .3rem;
+    margin: .2rem;
+}
+.active-day
+{
+    background-color: var(--navColorActive) !important;
+    color: var(--blackColor) !important;
+}
+.secand-card div h6
+{
+    color: #1C1C28;
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: normal;
+    width: 1.79194rem;
+    height: 1.79194rem;
+    background-color: var(--whiteColor);
+    border-radius: 2rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .15rem;
+}
+.activeText
+{
+    background-color: #292D32 !important;
+    color: var(--whiteColor) !important;
+}
+.secand-card div p
+{
+    color: #B4B4B4;
+    font-size: 0.46875rem;
+    font-weight: 400;
+    line-height: normal;
+}
+div.clander div.secand-card p:nth-child(2)
+{
+    margin-bottom: .52rem;
+}
+div.clander div.secand-card div.day div
+{
+    display: flex;
+    justify-content: center;
+}
+div.clander div.secand-card img
+{
+    display: block;
+    margin-right: .15rem;
+}
+
+
+@media (min-width: 576px) {
+
+    
+}
+@media (min-width: 768px) {
+    div.clander div.secand-card div.day{
+    padding: .3rem;
+    margin: auto;
+    }
+}
+@media (min-width: 992px) {
+  
+
+}
+@media (min-width: 1200px) {
+   
+}
+

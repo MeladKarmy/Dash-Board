@@ -34,7 +34,7 @@
             "monday":"Mo",
             "tuesday":"Tu",
             "wednesday":"We",
-            "Thursday":"Th",
+            "thursday":"Th",
             "friday":"Fr"
 
         },
@@ -63,5 +63,19 @@
             "read2":"read Number 2",
             "read3":"read Number 3"
         }
+    },
+    "clander":{
+        "main":"calander time",
+        "date":"march 2023",
+        "days":{
+            "saturday":"Saturday",
+            "sunday":"Sunday",
+            "monday":"Monday",
+            "tuesday":"Tuesday",
+            "wednesday":"Wednesday",
+            "thursday":"Thursday",
+            "friday":"Friday"
+        }
+
     }
 }

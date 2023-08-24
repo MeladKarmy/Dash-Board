@@ -1,16 +1,17 @@
     <div class="content">
-        <div>
-            <h6 *ngIf="langue" (click)="transformTo()">Translate To Arabic</h6>
-            <h6 *ngIf="!langue" (click)="transformTo()">Translate To English</h6>
-        </div>
         <nav>
             <app-navbar></app-navbar>
         </nav>
         <main>
+            <div class="lang">
+                <h6 *ngIf="langue" (click)="transformTo()">Translate To Arabic</h6>
+                <h6 *ngIf="!langue" (click)="transformTo()">Translate To English</h6>
+            </div>
             <app-persnal-data></app-persnal-data>
             <app-contact-data></app-contact-data>
         </main>
         <section>
+            <app-calander></app-calander>
             <app-comments></app-comments>
         </section>
     </div>

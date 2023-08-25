@@ -15,6 +15,7 @@ div.first-card
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1rem;
 }
 div.first-card .sub{
     display: flex;

@@ -42,7 +42,8 @@
         },
         "file":"Files on Working",
         "settingIcon":{
-            "header":"control on table"
+            "header":"control on table",
+            "tableHidden":"The Table Is Hidden"
         }
     },
     "personalData":{

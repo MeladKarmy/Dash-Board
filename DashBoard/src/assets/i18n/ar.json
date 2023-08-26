@@ -41,7 +41,8 @@
         },
         "file":"الملفات",
         "settingIcon":{
-            "header":"التحكم في الجدول"
+            "header":"التحكم في الجدول",
+            "tableHidden":"تم أخفاء الجدول"
         }
     },
     "personalData":{

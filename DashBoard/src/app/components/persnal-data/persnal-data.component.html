@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class="image">
-            <p>
+            <p [ngClass]="{rightimage:translate.langue}">
                 {{'personalData.date'|translate}}
                 <img src="../../../assets/image/arrowdown.svg" alt="arrowDownIcon">
             </p>
@@ -46,6 +46,9 @@
                 {{'personalData.analytics.type'|translate}}
             </h6>
            </div>
+
+
+
             <div class="choice">
               <div class="flex">
                     <img src="../../../assets/image/borderblue.svg" alt="borderblue">

@@ -7,8 +7,9 @@ import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 export class TransformDirService {
 
 constructor(private translate:TranslateService){  }
-langue:boolean=false
-textDir:any='rtl'
+langue:boolean=true
+textDir:any='ltr'
+// textDir:any='rtl'
 
 translater()
   {

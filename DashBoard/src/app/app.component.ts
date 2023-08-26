@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 import { TransformDirService } from './services/transform-dir.service';
 
 @Component({
@@ -9,7 +8,12 @@ import { TransformDirService } from './services/transform-dir.service';
 })
 export class AppComponent {
   title = 'DashBoard';
+  close:boolean=false
   constructor(public translate:TransformDirService){  }
+  // ngOnInit(){
+  //   this.translate.translater()
+  //   this.translate.transformTo()
+  // }
 langue:boolean=false
   translater()
   {

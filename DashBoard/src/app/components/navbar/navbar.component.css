@@ -1,22 +1,20 @@
-*{
-    margin: 0;
-    direction: rtl;
-}
 .menu .logo img
 {
    margin: 1.12rem 3.41rem 6rem 2.61rem;
-   z-index: 10;
+   z-index: 100;
 }
 .menu .tabs h5 {
     color: var(--navText);
     font-size: 0.75rem;
     font-weight: 400;
     line-height: 1.3125;
-    margin-right: 1.34rem ;
+    margin-right: 1.4rem ;
+    margin-left: 1.4rem ;
+    text-align: start;
 }
-.menu .tabs h5:nth-child(2)
+.menu .tabs li+h5
 {
-    margin-top: 1.4rem;
+    margin-top: 2rem;
     margin-bottom: 1.4rem;
 }
 .menu .tabs ul{
@@ -28,14 +26,21 @@
     margin-bottom: .42rem;
     cursor: pointer;
 }
-
 .menu .tabs li div.icon{
     position: relative;
-    width: 3.5625rem;
-    height: 2.625rem;
+    width: 3rem;
+    height: 2.5rem;
     border-radius: 2.8125rem 0rem 0rem 2.8125rem;
     background: var(--whiteColor) ;
     margin-left: .41rem;
+}
+.menu .tabs li div.iconright{
+    position: relative;
+    width: 3rem;
+    height: 2.5rem;
+    border-radius: 0 2.8125rem 2.8125rem 0 ;
+    background: var(--whiteColor) ;
+    margin-right: .41rem;
 }
 .menu .tabs li a{
     color: var(--navMainText);
@@ -46,14 +51,23 @@
 .activeIcone{
     background: var(--navColorActive) !important;
 }
-.menu .tabs li div.icon svg{
+.menu .tabs li svg.svgleft{
     position: absolute;
-    top: .66rem;
-    bottom: .61rem;
+    /* width: 1.35938rem;
+    height: 1.35938rem; */
+    top: .5rem;
+    /* bottom: .61rem; */
+    left: 1.41rem;
+    right: .8rem;
+}
+.menu .tabs li svg.svgright{
+    position: absolute;
+    /* width: 1.35938rem;
+    height: 1.35938rem; */
+    top: .5rem;
+    /* bottom: .61rem; */
     right: 1.41rem;
     left: .8rem;
-    width: 1.35938rem;
-    height: 1.35938rem;
 }
 
 .menu .tabs div.link-drowp-down
@@ -84,8 +98,12 @@
 .menu .tabs li div.tab {
     position: relative;
 }
-.menu .tabs li div.tab svg{
+.menu .tabs li div.tab svg.svglineleft{
     margin-left: .78rem;
+}
+.menu .tabs li div.tab svg.svglineright{
+    margin-right: .78rem;
+    transform: rotateY(180deg);
 }
 .menu .tabs li div.links a{
     display: block;
@@ -95,16 +113,22 @@
     line-height: 1.3125rem;
     margin-bottom: .8rem;
 }
-.menu .tabs li div.links {
+.menu .tabs li div.linksleft {
     position: absolute;
     min-width:max-content ;
     top: -.3rem;
     right: .78rem;
 }
+.menu .tabs li div.linksright {
+    position: absolute;
+    min-width:max-content ;
+    top: -.3rem;
+    left: .78rem;
+}
 .menu .tabs li div.links a:nth-child(2){
     margin-bottom: .65rem;
 }
-.sub-drowpdown
-{
+.tab{
     margin-top: 2rem;
+    margin-bottom: 1rem;
 }

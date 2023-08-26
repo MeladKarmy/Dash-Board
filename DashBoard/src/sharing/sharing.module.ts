@@ -18,7 +18,7 @@ import {MatNativeDateModule} from '@angular/material/core';
   imports: [
     CommonModule,
     TranslateModule.forRoot({
-      defaultLanguage: 'ar',
+      defaultLanguage: 'en',
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,

@@ -1,23 +1,16 @@
-/* div.content
-{
-    display: flex;
-    justify-content: space-between;
-}
-div.content nav{
-    width: 15.625rem;
-    height: 51.25rem;
-    
-
-}
-div.content main{
-    width: 90rem;
-    height: 100.25rem;
+.closeleft{
+    position: absolute;
+    left: -1rem;
+    top: 0;
     
 }
-div.content section{
-    width: 24.125rem;
-height: 47.375rem;
-} */
+.closeright{
+    position: absolute;
+    right: -1.2rem;
+    top: -1.2rem;
+    transform: rotate(180deg);
+    
+}
 .lang{
     background-color: aliceblue;
     width: fit-content;
@@ -37,15 +30,20 @@ div.content
 div.content nav{
     width: 90%;
     display: none;
+    background-color: #219756;
+    
 }
 div.content main{
     text-align: center;
+    background-color: #972170;
     width: 90%;
     margin: auto;
 }
 div.content section{
     width: 90%;
     margin: auto;
+    background-color: #d1e000;
+
 }
 @media (min-width: 576px) {
 

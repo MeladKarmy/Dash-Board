@@ -4,6 +4,7 @@ div.table
   overflow: auto;
   text-align: center !important;
   margin: auto !important;
+  /* background-color: white; */
 }
 div.filter > div
 {
@@ -158,11 +159,28 @@ div.choice
   height: 9.5rem;
   color: #BBBEC2;
   border-radius: 0.18638rem;
-  background: #FFF;
+  /* background: #FFF; */
+  background: #575656;
   box-shadow: 0px 10.73493766784668px 23.855417251586914px 0px rgba(112, 144, 176, 0.12);
+}
+div.choiceleft
+{
   z-index: 10;
-  top: 1.7rem;
+  top: 1rem;
   left: 2.3rem;
+}
+div.choiceright
+{
+  z-index: 10;
+  top: 1rem;
+  right: 2.3rem;
+}
+
+div.choice h3
+{
+  padding-left: .5rem;
+  padding-right: .5rem;
+
 }
 div.choice div{
   padding: .3rem;
@@ -178,7 +196,6 @@ div.choice h3{
   color: #2E2E2E;
   font-weight: 600;
   font-size: 0.7638rem;
-
   margin-bottom: .1rem;
   text-align: start;
 }
@@ -189,7 +206,10 @@ div.choice div input
 }
 div.choice div label
 {
- margin-right: .7rem;
+ margin-right: .6rem;
+ margin-left: .6rem;
+ text-align: start;
+ flex-grow: 2;
 }
 div.choice div img{
   display: block;

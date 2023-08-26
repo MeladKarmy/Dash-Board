@@ -22,6 +22,7 @@
         "setting": "الإعدادات"
     },
     "conatactData":{
+        "search":"بحث",
         "add":"أضافة جديد",
         "id":"رقم ال ID",
         "fullName":"الأسم بالكامل",

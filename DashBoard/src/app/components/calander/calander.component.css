@@ -1,12 +1,5 @@
-.lang{
-    background-color: aliceblue;
-    width: fit-content;
-    height: fit-content;
-    color: #1C1C28;
-    font-size: 2rem;
-}
 div.clander{
-    padding: 1.8rem;
+    padding: .8rem;
     display: flex;
     flex-direction: column;
 }
@@ -22,14 +15,20 @@ div.first-card .sub{
     align-items: center;
 }
 div.first-card .sub:first-child *{
-    margin-left: 1rem;
+    margin-left: .8rem;
 }
 div.first-card .sub:nth-child(2) *{
-    margin-left: .5rem;
+    margin-left: .4rem;
+}
+div.first-card .sub:nth-child(2)
+{
+    border-radius: 0.51563rem;
+    background: #F7F6FD;
+   padding: .5rem;
 }
 div.first-card .sub:nth-child(2) span
 {
-    margin-bottom: .3rem;
+    margin-bottom: .2rem;
 }
 div.clander div.secand-card
 {

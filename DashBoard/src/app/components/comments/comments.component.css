@@ -20,6 +20,7 @@ div.card h3{
     font-size: 0.65625rem;
     font-weight: 500;
     line-height: normal;
+    text-align: start;
 }
 div.card h6{
     color: #76778B;
@@ -33,7 +34,7 @@ div.card h6{
 div.card h6 span
 {
     display: block;
-    margin-right: .3rem;
+    margin: .3rem;
 }
 div.card .sub-card
 {
@@ -59,7 +60,6 @@ div.card .sub-card div:first-child{
 }
 div.card .sub-card div:first-child p
 {
-    margin-right: .3rem;
+    margin:0 .3rem;
     cursor: pointer;
-
 }

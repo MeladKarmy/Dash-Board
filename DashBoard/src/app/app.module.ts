@@ -11,6 +11,7 @@ import { PersnalDataComponent } from './components/persnal-data/persnal-data.com
 import { FullNamePipe } from './pipes/full-name.pipe';
 import { CommentsComponent } from './components/comments/comments.component';
 import { CalanderComponent } from './components/calander/calander.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,13 +22,18 @@ import { CalanderComponent } from './components/calander/calander.component';
     FullNamePipe,
     CommentsComponent,
     CalanderComponent,
+    
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SharingModule
+    SharingModule,
+    FormsModule,
+    ReactiveFormsModule
+
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

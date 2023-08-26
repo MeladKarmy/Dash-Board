@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TransformDirService } from 'src/app/services/transform-dir.service';
 
 @Component({
   selector: 'app-navbar',
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  constructor(){}
+  constructor( public translate:TransformDirService){}
   dropdown1:boolean=false;
   dropdown2:boolean=false;
   dropdownClicked1()

@@ -16,7 +16,7 @@ import {MatMenuModule} from '@angular/material/menu';
   imports: [
     CommonModule,
     TranslateModule.forRoot({
-      defaultLanguage: 'en',
+      defaultLanguage: 'ar',
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,

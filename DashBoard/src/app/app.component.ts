@@ -8,7 +8,11 @@ import { TransformDirService } from './services/transform-dir.service';
 })
 export class AppComponent {
   title = 'DashBoard';
-  close:boolean=false
+  close:boolean=true
+  openNav()
+  {
+    this.close=!this.close
+  }
   constructor(public translate:TransformDirService){  }
   // ngOnInit(){
   //   this.translate.translater()

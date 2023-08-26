@@ -1,42 +1,45 @@
     <main>
-        <div class="personal">
-            <h4>{{'personalData.title'|translate}}</h4>
-            <div>
-                <div class="data">
-                    <p>
-                        <img src="../../../assets/image/read1.svg" alt=" {{'personalData.subTitle.title1'|translate}}">
-                        {{'personalData.subTitle.title1'|translate}}
-                    </p>
-                    <h6>254</h6>
-                </div>
-
-                <div class="data">
-                    <p>
-                        <img src="../../../assets/image/read2.svg" alt="{{'personalData.subTitle.title2'|translate}}">
-                        {{'personalData.subTitle.title2'|translate}}
-                    </p>
-                    <h6>120</h6>
-                </div>
-                <div class="data">
-                    <p>
-                        <img src="../../../assets/image/read3.svg" alt="{{'personalData.subTitle.title3'|translate}}">
-                        {{'personalData.subTitle.title3'|translate}}
-                    </p>
-                    <h6>25</h6>
+        <div class="person-data">
+            <div class="personal" [ngClass]="{marginleft:!translate.langue,marginright:translate.langue}">
+                <h4>{{'personalData.title'|translate}}</h4>
+                <div>
+                    <div class="data">
+                        <p>
+                            <img src="../../../assets/image/read1.svg" alt=" {{'personalData.subTitle.title1'|translate}}">
+                            {{'personalData.subTitle.title1'|translate}}
+                        </p>
+                        <h6>254</h6>
+                    </div>
+    
+                    <div class="data">
+                        <p>
+                            <img src="../../../assets/image/read2.svg" alt="{{'personalData.subTitle.title2'|translate}}">
+                            {{'personalData.subTitle.title2'|translate}}
+                        </p>
+                        <h6>120</h6>
+                    </div>
+                    <div class="data">
+                        <p>
+                            <img src="../../../assets/image/read3.svg" alt="{{'personalData.subTitle.title3'|translate}}">
+                            {{'personalData.subTitle.title3'|translate}}
+                        </p>
+                        <h6>25</h6>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="image">
-            <p [ngClass]="{rightimage:translate.langue}">
-                {{'personalData.date'|translate}}
-                <img src="../../../assets/image/arrowdown.svg" alt="arrowDownIcon">
-            </p>
-            <div class="details">
-                <img src="../../../assets/image/image.svg" alt="imageLogo">
-                <h6>{{'personalData.firstEmplee'|translate}}</h6>
+            <div class="image">
+                <p [ngClass]="{rightimage:translate.langue}">
+                    {{'personalData.date'|translate}}
+                    <img src="../../../assets/image/arrowdown.svg" alt="arrowDownIcon">
+                </p>
+                <div class="details">
+                    <img src="../../../assets/image/image.svg" alt="imageLogo">
+                    <h6>{{'personalData.firstEmplee'|translate}}</h6>
+                </div>
             </div>
-        </div>
+    
 
+        </div>
 
         <div class="analytics">
             <h4>{{'personalData.analytics.title'|translate}}</h4>
@@ -70,28 +73,50 @@
 
 
         <div class="main-three-reads">
-            <div class="card">
+            <div class="card" *ngIf="!translate.langue">
                 <div class="subcard">
                     <h3>{{'personalData.reads.read1'|translate}}</h3>
                     <h3>35<img src="../../../assets/image/timer-start.svg" alt="timer-start"></h3>
                 </div> 
                 <img src="../../../assets/image/MaskGroup1.svg" alt="MaskGroup">
             </div>
-            <div class="card">
+            <div class="card" *ngIf="translate.langue">
+                <img src="../../../assets/image/MaskGroup1.svg" alt="MaskGroup">
+                <div class="subcard">
+                    <h3>{{'personalData.reads.read1'|translate}}</h3>
+                    <h3>35<img src="../../../assets/image/timer-start.svg" alt="timer-start"></h3>
+                </div> 
+            </div>
+            <div class="card" *ngIf="!translate.langue">
                 <div class="subcard">
                     <h3>{{'personalData.reads.read2'|translate}}</h3>
                     <h3>35<img src="../../../assets/image/calendar.svg" alt="calendar"></h3>
                 </div> 
                 <img src="../../../assets/image/MaskGroup2.svg" alt="MaskGroup">
             </div>
-            <div class="card">
+            <div class="card" *ngIf="translate.langue">
+                <img src="../../../assets/image/MaskGroup2.svg" alt="MaskGroup">
+                <div class="subcard">
+                    <h3>{{'personalData.reads.read2'|translate}}</h3>
+                    <h3>35<img src="../../../assets/image/calendar.svg" alt="calendar"></h3>
+                </div> 
+            </div>
+            <div class="card" *ngIf="!translate.langue">
                 <div class="subcard">
                     <h3>{{'personalData.reads.read3'|translate}}</h3>
                     <h3>35<img src="../../../assets/image/tick-circle.svg" alt="tick-circle"></h3>
                 </div> 
                 <img src="../../../assets/image/MaskGroup3.svg" alt="MaskGroup">
             </div>
+            <div class="card" *ngIf="translate.langue">
+                <img src="../../../assets/image/MaskGroup3.svg" alt="MaskGroup">
+                <div class="subcard">
+                    <h3>{{'personalData.reads.read3'|translate}}</h3>
+                    <h3>35<img src="../../../assets/image/tick-circle.svg" alt="tick-circle"></h3>
+                </div> 
+            </div>
         </div>
     </main>
 
 
+    <!-- [ngClass]="{marginleft:!translate.langue,marginright:translate.langue}" -->

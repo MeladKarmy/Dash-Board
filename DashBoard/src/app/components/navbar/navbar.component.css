@@ -1,3 +1,6 @@
+.menu{
+    white-space:nowrap;
+}
 .menu .logo img
 {
    margin: 1.12rem 3.41rem 6rem 2.61rem;

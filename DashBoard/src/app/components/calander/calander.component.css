@@ -1,4 +1,5 @@
 div.clander{
+    white-space:nowrap;
     padding: .4rem;
     display: flex;
     flex-direction: column;

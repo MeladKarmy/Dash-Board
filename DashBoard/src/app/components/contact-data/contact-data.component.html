@@ -10,7 +10,7 @@
                     <img src="../../../assets/image/arrow-3.svg" alt="arrow">
                 </div>
             </div>
-            <button><span>+</span>{{'conatactData.add'|translate}} </button>
+            <button><span>+ </span> {{'conatactData.add'|translate}} </button>
         </div>
     </div>
     <table cdkDropList (cdkDropListDropped)="drop($event)">
@@ -81,18 +81,20 @@
     </table>
     <div class="pagination">
         <div class="cont">
-            <span>عرض</span>
-            <button> ^ 20 </button>
-            <span>من أصل 250</span>
+            <span *ngIf="!translate.langue">عرض</span>
+            <span *ngIf="translate.langue">show</span>
+            <button >20 <img src="../../../assets/image/arrowdown.svg" alt="arrowdown"></button>
+            <span *ngIf="!translate.langue">من أصل 250</span>
+            <span *ngIf="translate.langue">from 250</span>
         </div>
         <div class="btn">
-            <button>></button>
+            <button><img src="../../../assets/image/paginatprev.svg" alt="paginatprev"></button>
             <button>1</button>
             <button>2</button>
             <button>3</button>
             <button>4</button>
             <button>5</button>
-            <button><</button>
+            <button><img src="../../../assets/image/paginatnext.svg" alt="paginatnext"></button>
         </div>
 
     </div>

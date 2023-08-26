@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { TransformDirService } from './services/transform-dir.service';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,7 +9,7 @@ import { TransformDirService } from './services/transform-dir.service';
 })
 export class AppComponent {
   title = 'DashBoard';
-  close:boolean=true
+  close:boolean=false
   openNav()
   {
     this.close=!this.close

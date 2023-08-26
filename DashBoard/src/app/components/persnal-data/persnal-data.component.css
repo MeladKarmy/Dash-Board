@@ -3,24 +3,46 @@ main{
     display: flex;
     flex-wrap: wrap;
     align-items:flex-start;
-    /* background-color: white; */
+    justify-content: center;
+    margin: auto;
+    background-color: var(--whiteColor);
+    white-space:nowrap;
+    padding: 1rem;
+
 }
 @media (min-width: 768px) {
     main {
         flex-direction: row;
+        justify-content: space-between;
         flex-wrap: nowrap;
     }
+}
+main .person-data
+{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-items:flex-start;
+
 }
 main div.personal
 {
     display: flex;
     flex-direction: column;
+   
+}
+main div.marginleft
+{
+    margin-left: .5rem;
+}
+main div.marginright
+{
+    margin-right: .5rem;  
 }
 main div.personal h4
 {
     color:  #23262F;
     font-size: 0.75rem;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.875rem; 
     margin-bottom:2rem;
 }
@@ -29,11 +51,17 @@ main div.personal div.data {
 }
 main div.personal div.data p
 {
+    display: flex;
+    align-items: center;
     color: #787486;
     font-size: 0.4625rem;
     font-weight: 400;
-    line-height: normal;
     margin-bottom: .52rem;
+}
+main div.personal div.data p img {
+    display: block;
+    margin-left: .1rem;
+    margin-right: .1rem;
 }
 main div.personal div.data h6{
     color: var(--blackColor);
@@ -42,11 +70,12 @@ main div.personal div.data h6{
     font-weight: 700;
     line-height: normal;
 }
-/* main div.image 
+main div.image 
 {
-    margin-right: .7rem;
-    margin-left: .7rem;
-} */
+    justify-self: flex-end;
+    /* margin-right: .7rem;
+    margin-left: .7rem; */
+}
 main div.image p{
     display: flex;
     justify-content: left;
@@ -86,15 +115,12 @@ main div.image div.details h6{
 
 
 main div.analytics{
-    
-    background-color: #0895a1;
-    margin: auto .7rem 1rem;
-
+    margin-bottom:1rem;
+    background-color: var(--whiteColor) !important;
 }
 main div.analytics h4
 {
     text-align: start;
-    /* padding-right: 2rem; */
     color:  #23262F;
     font-size: 0.75rem;
     font-weight: 700;
@@ -167,8 +193,9 @@ main div.analytics div.choice h3
 main .main-three-reads{
     display: flex;
     flex-direction: column;
-    margin-top: 1.7rem;
     margin: auto;
+    white-space:nowrap;
+
 }
 main .main-three-reads .card{
     background-color: #FF9A3E;
@@ -177,6 +204,8 @@ main .main-three-reads .card{
     border-radius: 0.9375rem;
     color: var(--whiteColor);
     margin-bottom: 1rem;
+    justify-content: flex-start;
+    justify-items: flex-start;
 }
 main .main-three-reads .subcard
 {
@@ -190,7 +219,12 @@ main .main-three-reads .subcard h3{
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.02344rem;
+    justify-content: flex-end;
     
+}
+main .main-three-reads .subcard h3:first-child{
+    padding-top: .2rem;
+    margin-bottom: .5rem;
 }
 main .main-three-reads .subcard h3:nth-child(2)
 {
@@ -206,25 +240,25 @@ main .main-three-reads .subcard h3 img
 
 main .main-three-reads .subcard img
 {
-    /* display: inline-block; */
     display: block;
-    
 }
-/* main .main-three-reads .subcard>img{
-    display:block;
-} */
 main .main-three-reads .card:nth-child(2){
-    background-color: #7E72DD;
+    background-color: #7661E2;
 
 }
 main .main-three-reads .card:nth-child(3){
-    background-color: #4EDDA4;
+    background-color: #3DD598
 
 }
 @media (min-width: 576px) {
 
 }
 @media (min-width: 768px) {
+    main div.analytics{
+    
+        background-color: #0895a1;
+        margin:0 .7rem 1rem;    
+    }
     main .main-three-reads{
         
         margin: 0;

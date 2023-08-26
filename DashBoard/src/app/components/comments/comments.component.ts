@@ -17,6 +17,8 @@ export class CommentsComponent {
     {comment:"هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوي",name:"كريم عبد العزيز" ,image:"../../../assets/image/avatar2.svg",clock:"../../../assets/image/clock1.svg"},
     {comment:"هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوي",name:"ميرا محسن" ,image:"../../../assets/image/avatar1.svg",clock:"../../../assets/image/clock1.svg"},
     {comment:"هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوي",name:"ميرا محسن",image:"../../../assets/image/avatar1.svg",clock:"../../../assets/image/clock1.svg"},
+    {comment:"هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوي",name:"محمود الغريب" ,image:"../../../assets/image/avatar2.svg",clock:"../../../assets/image/clock1.svg"},
+    {comment:"هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوي",name:"كريم عبد العزيز" ,image:"../../../assets/image/avatar2.svg",clock:"../../../assets/image/clock1.svg"},
   ];
 
   drop(event: CdkDragDrop<any[]>) {

@@ -43,39 +43,31 @@ div.content
     flex-direction: column;
     justify-content: space-between;
 }
-/* div.content nav{
-    width: 90%;
-    display: none;
-    background-color: #219756;
-    
-} */
  div.content nav.openmenu{
-   position: absolute;
+   position: fixed;
    width: 20rem;
-    display: block;
-    background-color: #219756;
-    z-index: 100;
-    min-height:1000px;
+   top: 0;
+   display: block;
+   z-index: 100;
+   min-height:100%;    
 } 
  div.content nav.closemenu{
-   position: absolute;
+   position: fixed;
    width: 20rem;
-    display: none;
-    background-color: #219756;
-    z-index: 100;
-    min-height:1000px;    
+   top: 0;
+   display: none;
+   z-index: 100;
+    min-height:100%;    
 } 
 div.content main{
     text-align: center;
-    background-color: #972170;
-    width: 90%;
+    width:100%;
     margin: auto;
 }
-div.content section{
-    width: 90%;
-    margin: auto;
-    background-color: #d1e000;
 
+div.content section{
+    width: 95%;
+    margin: auto;
 }
 @media (min-width: 576px) {
 
@@ -88,25 +80,26 @@ div.content section{
 }
 }
 @media (min-width: 992px) {
-    div.content
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-div.content section{
-    margin: 0 .7rem;
-        
-        
-    }
-    div.content main{
-        flex-shrink:2 ;    
-    }
+   
 }
 @media (min-width: 1200px) {
-    /* div.content nav{
-        position: static;
-        display: block;
+    div.content
+    {
         width: 100%;
-    } */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    div.content section{
+        width: 25%;
+        margin: 0 .7rem;
+    }
+    div.content nav{
+        width: 17%;
+        display: block;
+        margin: 0 .7rem;
+    }
+    div.content main{
+        width: 55%;
+    }
 }

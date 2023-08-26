@@ -6,6 +6,7 @@ div.card
 {
     padding: .7rem;
     margin-bottom: 1rem;
+    margin-top: 1rem;
     border-radius: 0.65625rem;
     background: #FFF6E3;
 }

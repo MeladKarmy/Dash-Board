@@ -8,6 +8,7 @@ import { TransformDirService } from 'src/app/services/transform-dir.service';
 })
 export class CalanderComponent {
   constructor(public translate:TransformDirService){}
-  t=this.translate.langue
+  nextArrow='../../../assets/image/next.svg'
+  previousArrow='../../../assets/image/previous.svg'
 
 }

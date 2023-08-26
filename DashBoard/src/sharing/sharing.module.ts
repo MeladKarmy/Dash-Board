@@ -4,8 +4,10 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import {DragDropModule} from '@angular/cdk/drag-drop';
-import {MatListModule} from '@angular/material/list';
-import {MatMenuModule} from '@angular/material/menu';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatNativeDateModule} from '@angular/material/core';
 
 
 @NgModule({
@@ -24,16 +26,19 @@ import {MatMenuModule} from '@angular/material/menu';
       },
     }),
     DragDropModule,
-    MatListModule,
-    MatMenuModule
+    MatFormFieldModule,
+    MatInputModule,
+    MatDatepickerModule,
    
   ],
   exports:[
     TranslateModule,
     HttpClientModule,
     DragDropModule,
-    MatListModule,
-    MatMenuModule
+    MatFormFieldModule,
+    MatInputModule,
+    MatNativeDateModule,
+    MatDatepickerModule,
     
 
     

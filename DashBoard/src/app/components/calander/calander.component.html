@@ -3,15 +3,19 @@
         <div class="first-card">
             <div class="sub">
                 <span>{{'clander.main'|translate}}</span>
-                <img src="../../../assets/image/prvvious.svg" alt="previous arrow">
-                <img src="../../../assets/image/next.svg" alt="next arrow">
+                <img *ngIf="!translate.langue"[src]="previousArrow" alt="previous arrow">
+                <img *ngIf="!translate.langue" [src]="nextArrow" alt="next arrow">
+                <img *ngIf="translate.langue" [src]="nextArrow" alt="next arrow">
+                <img *ngIf="translate.langue"[src]="previousArrow" alt="previous arrow">
             </div>
-            <div class="sub">
+            <div class="sub" (click)="picker.open()">
                 <img src="../../../assets/image/calendar-2.svg" alt="calendar">
                 <span>{{'clander.date'|translate}}</span>
                 <img src="../../../assets/image/arrowdown.svg" alt="down arrow">
             </div>
         </div>
+        <input [hidden] style="visibility: hidden;" [matDatepicker]="picker" #inp>
+        <mat-datepicker style="visibility: hidden;" #picker></mat-datepicker>
 
 
         <div class="secand-card" >

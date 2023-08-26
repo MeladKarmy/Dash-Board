@@ -1,5 +1,5 @@
 div.clander{
-    padding: .8rem;
+    padding: .4rem;
     display: flex;
     flex-direction: column;
 }
@@ -24,11 +24,15 @@ div.first-card .sub:nth-child(2)
 {
     border-radius: 0.51563rem;
     background: #F7F6FD;
-   padding: .5rem;
+   padding: .3rem;
 }
 div.first-card .sub:nth-child(2) span
 {
     margin-bottom: .2rem;
+}
+div.first-card .sub:nth-child(2):hover
+{
+    background-color: var(--navColorActive);
 }
 div.clander div.secand-card
 {

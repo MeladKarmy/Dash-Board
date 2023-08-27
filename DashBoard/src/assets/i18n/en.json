@@ -25,6 +25,7 @@
     "conatactData":{
         "search":"search",
         "add":"Add new",
+        "update":"Update",
         "id":"ID",
         "fullName":"FullName",
         "email":"Email",

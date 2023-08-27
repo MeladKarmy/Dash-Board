@@ -9,7 +9,6 @@ export class TransformDirService {
 constructor(private translate:TranslateService){  }
 langue:boolean=true
 textDir:any='ltr'
-// textDir:any='rtl'
 
 translater()
   {

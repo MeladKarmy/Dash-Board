@@ -115,11 +115,11 @@ div.content section{
         margin: 0 .7rem;
     }
     div.content nav{
-        width: 17%;
+        width: 15%;
         display: block;
-        margin: 0 .7rem;
+        /* margin: 0 .7rem; */
     }
     div.content main{
-        width: 55%;
+        width: fit-content;
     }
 }

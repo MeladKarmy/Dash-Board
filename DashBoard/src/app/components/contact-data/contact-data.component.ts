@@ -1,4 +1,4 @@
-import { Component  } from '@angular/core';
+import { Component, ElementRef  } from '@angular/core';
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { TransformDirService } from 'src/app/services/transform-dir.service';
 
@@ -16,16 +16,19 @@ export class ContactDataComponent {
   email:boolean=true
   file:boolean=true
   days:boolean=true
-  
+  create:boolean=false
+  ID:string=''
+  Email:string=''
+  Name:string=''
   data = [
-    {id:"ID-15877",name:"اسم إفتراضي جديدي",email:"Example@company.com",days:"jjhghj",file:"../../../assets/image/tablefile2.svg"},
-    {id:"ID-15877",name:"اسم إفتراضي جديدي",email:"Example@company.com",days:"jjhghj",file:"../../../assets/image/tablefile.svg"},
-    {id:"ID-15877",name:"اسم إفتراضي جديدي",email:"Example@company.com",days:"jjhghj",file:"../../../assets/image/tablefile2.svg"},
-    {id:"ID-15877",name:"اسم إفتراضي جديدي",email:"Example@company.com",days:"jjhghj",file:"../../../assets/image/tablefile.svg"},
-    {id:"ID-15877",name:"اسم إفتراضي جديدي",email:"Example@company.com",days:"jjhghj",file:"../../../assets/image/tablefile.svg"},
-    {id:"ID-15877",name:"اسم إفتراضي جديدي",email:"Example@company.com",days:"jjhghj",file:"../../../assets/image/tablefile2.svg"},
-    {id:"ID-15877",name:"اسم إفتراضي جديدي",email:"Example@company.com",days:"jjhghj",file:"../../../assets/image/tablefile.svg"},
-    {id:"ID-15877",name:"اسم إفتراضي جديدي",email:"Example@company.com",days:"jjhghj",file:"../../../assets/image/tablefile2.svg"},
+    {id:"ID-15877",name:"اسم إفتراضي جديدي",email:"Example@company.com",file:"../../../assets/image/tablefile2.svg"},
+    {id:"ID-15877",name:"اسم إفتراضي جديدي",email:"Example@company.com",file:"../../../assets/image/tablefile.svg"},
+    {id:"ID-15877",name:"اسم إفتراضي جديدي",email:"Example@company.com",file:"../../../assets/image/tablefile2.svg"},
+    {id:"ID-15877",name:"اسم إفتراضي جديدي",email:"Example@company.com",file:"../../../assets/image/tablefile.svg"},
+    {id:"ID-15877",name:"اسم إفتراضي جديدي",email:"Example@company.com",file:"../../../assets/image/tablefile.svg"},
+    {id:"ID-15877",name:"اسم إفتراضي جديدي",email:"Example@company.com",file:"../../../assets/image/tablefile2.svg"},
+    {id:"ID-15877",name:"اسم إفتراضي جديدي",email:"Example@company.com",file:"../../../assets/image/tablefile.svg"},
+    {id:"ID-15877",name:"اسم إفتراضي جديدي",email:"Example@company.com",file:"../../../assets/image/tablefile2.svg"},
     
   ];
   drop(event: CdkDragDrop<{}[]>) {
@@ -42,5 +45,20 @@ export class ContactDataComponent {
       if(x===value)return x
     })
     italitor[0]=!italitor[0]
+  }
+  addNew()
+  {
+    this.create=!this.create
+  }
+  creatNew()
+  {
+    let obj={
+      id:this.ID,
+      name:this.Name,
+      email:this.Email,
+      file:'../../../assets/image/tablefile.svg'
+    }
+    this.data.push(obj)
+    this.create=false
   }
 }

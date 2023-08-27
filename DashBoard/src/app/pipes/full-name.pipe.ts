@@ -9,7 +9,7 @@ export class FullNamePipe implements PipeTransform {
     let name:string=''
     if(fullName.length>20) 
     {
-      for(let i=0;i<fullName.length;i++)
+      for(let i=0;i<20;i++)
       {
         name+=fullName[i]
       }

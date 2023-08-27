@@ -28,6 +28,8 @@
     align-items: baseline;
     margin-bottom: .42rem;
     cursor: pointer;
+    transition: all 1s;
+
 }
 .menu .tabs li div.icon{
     position: relative;
@@ -53,6 +55,12 @@
 }
 .activeIcone{
     background: var(--navColorActive) !important;
+}
+li:hover:not(li:first-of-type)
+{
+    background-color: #3DD598;
+    border-radius: 1rem;
+
 }
 .menu .tabs li svg.svgleft{
     position: absolute;
@@ -144,6 +152,7 @@
     background-color: #FEEE00;
     width: 100%;
     cursor: pointer !important;
+    transition: all 1s;
 }
 nav+button:hover
 {

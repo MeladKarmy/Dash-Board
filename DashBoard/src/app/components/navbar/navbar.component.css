@@ -135,3 +135,18 @@
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
+ nav+button{
+    display: block;
+    margin-top: 3rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    background-color: #FEEE00;
+    width: 100%;
+    cursor: pointer !important;
+}
+nav+button:hover
+{
+    background-color: #3DD598;
+
+}

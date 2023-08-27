@@ -3,14 +3,12 @@
     left: -1rem;
     top: 0;
     z-index: 101;
-    
 }
 .closeleftopen{
     position: fixed;
     left: 17.6rem;
     top: 0;
     z-index: 101;
-    
 }
 .closeright{
     position: fixed;
@@ -25,7 +23,21 @@
     top: -1.2rem;
     transform: rotate(180deg);
     z-index: 101;
-
+}
+.staticimageright
+{
+    position: fixed;
+    left: 13.5rem;
+    top: 0;
+    z-index: 101;
+}
+.staticimageleft
+{
+    position: fixed;
+    right: 13.5rem;
+    top: 0;
+    transform: rotate(180deg);
+    z-index: 101;
 }
 .lang{
     background-color: aliceblue;
@@ -38,11 +50,19 @@ div.content
 {
     text-align: center;
     width: 100%;
-    margin:.5rem auto;
+    margin:0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+ div.content nav{
+    background-color: var(--whiteColor);
+    box-shadow: 0rem 0 1rem 0 rgba(112, 144, 176, 0.12);
+ }
+ div.content nav.static{
+   width: 18%;
+   min-height:100%;    
+} 
  div.content nav.openmenu{
    position: fixed;
    width: 20rem;
@@ -61,8 +81,8 @@ div.content
 } 
 div.content main{
     text-align: center;
-    width:100%;
-    margin: auto;
+    width:90%;
+    margin:0 auto !important;
 }
 
 div.content section{

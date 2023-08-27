@@ -1,20 +1,33 @@
+<!-- <p>Window width: <strong>{{ getScreenWidth }}</strong></p> -->
+    
     <div class="content" [dir]="translate.textDir">
-        <img (click)="openNav()" src="../assets/image/btnmenu.svg" alt="arrow"
+
+
+        <img *ngIf="getScreenWidth<1200" (click)="openNav()" src="../assets/image/btnmenu.svg" alt="arrow"
                 [ngClass]="{closeleft:translate.langue && !close,closeleftopen:translate.langue && close,
-                    closeright:!translate.langue && !close,closerightopen:!translate.langue && close}"
-                >
-        <nav [ngClass]="{openmenu:close,closemenu:!close}">
+                    closeright:!translate.langue && !close,closerightopen:!translate.langue && close}">
+
+
+        <!-- <img *ngIf="getScreenWidth>1200" src="../assets/image/btnmenu.svg" alt="arrow"
+                [ngClass]="{staticimageright:translate.langue,staticimageleft:!translate.langue}"> -->
+
+
+        <nav *ngIf="getScreenWidth<1200" [ngClass]="{openmenu:close,closemenu:!close}">
             <app-navbar></app-navbar>
         </nav>
+        <nav *ngIf="getScreenWidth>1200" class="static">
+            <app-navbar></app-navbar>
+        </nav>
+
+
+
         <main>
-            <div class="lang" (click)="transformTo()">
-                
-                <h6 *ngIf="translate.langue">Translate To Arabic</h6>
-                <h6 *ngIf="!translate.langue">Translate To English</h6>
-            </div>
-                <app-persnal-data></app-persnal-data>
-                <app-contact-data></app-contact-data>
+            <app-persnal-data></app-persnal-data>
+            <app-contact-data></app-contact-data>
         </main>
+
+
+
         <section>
             <app-calander></app-calander>
             <app-comments></app-comments>

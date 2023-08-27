@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { TransformDirService } from './services/transform-dir.service';
 
 
@@ -7,25 +7,23 @@ import { TransformDirService } from './services/transform-dir.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent{
   title = 'DashBoard';
+  constructor(public translate:TransformDirService){  }
+  @HostListener('window:resize', ['$event'])
+  onWindowResize() {
+    this.getScreenWidth = window.innerWidth;
+  }
+  public getScreenWidth: any;
   close:boolean=false
+  langue:boolean=false
+  
+  ngAfterContentChecked()
+  {
+    this.getScreenWidth = window.innerWidth;
+  }
   openNav()
   {
     this.close=!this.close
-  }
-  constructor(public translate:TransformDirService){  }
-  // ngOnInit(){
-  //   this.translate.translater()
-  //   this.translate.transformTo()
-  // }
-langue:boolean=false
-  translater()
-  {
-    this.translate.translater()
-  }
-  transformTo()
-  {
-   this.translate.transformTo()
   }
 }

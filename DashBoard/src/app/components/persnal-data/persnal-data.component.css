@@ -40,10 +40,10 @@ main div.marginright
 }
 main div.personal h4
 {
-    color:  #23262F;
+    color: #23262F;
     font-size: 0.75rem;
-    font-weight: 500;
-    line-height: 1.875rem; 
+    font-weight: 700;
+    line-height: 1.875rem; /* 250% */
     margin-bottom:2rem;
 }
 main div.personal div.data {
@@ -69,18 +69,17 @@ main div.personal div.data h6{
     font-size: 0.84375rem;
     font-weight: 700;
     line-height: normal;
+    text-align: start;
 }
 main div.image 
 {
     justify-self: flex-end;
-    /* margin-right: .7rem;
-    margin-left: .7rem; */
 }
 main div.image p{
     display: flex;
     justify-content: left;
     align-items: center;
-    margin-top: 2.5rem;
+    margin-top: 1rem;
     color: #787486;
     font-size: 0.5625rem;
     font-weight: 400;
@@ -120,11 +119,12 @@ main div.analytics{
 }
 main div.analytics h4
 {
-    text-align: start;
-    color:  #23262F;
-    font-size: 0.75rem;
-    font-weight: 700;
-    line-height: 1.875rem; 
+    color: #23262F;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1rem;
+text-align: start; /* 250% */
     
 }  
 main div.analytics div.image-analytics{
@@ -265,10 +265,3 @@ main .main-three-reads .card:nth-child(3){
     }
    
 }
-@media (min-width: 992px) {
-   
-}
-@media (min-width: 1200px) {
-   
-}
-

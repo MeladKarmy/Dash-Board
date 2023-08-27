@@ -18,5 +18,9 @@ export class NavbarComponent {
   {
     this.dropdown2=!this.dropdown2
   }
+  transformTo()
+  {
+   this.translate.transformTo()
+  }
 
 }

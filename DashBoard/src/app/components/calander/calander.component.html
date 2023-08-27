@@ -26,7 +26,7 @@
                     <img  src="../../../assets/image/red.svg" alt="color red">
                 </div>
             </div>
-            <div class="day"  *ngFor="let day of [0,1,2,3,4,5] let i=index">
+            <div class="day" *ngFor="let day of [0,1,2,3,4,5] let i=index">
                 <p *ngIf="i==0">{{'clander.days.sunday'|translate}}</p>
                 <p *ngIf="i==1">{{'clander.days.monday'|translate}}</p>
                 <p *ngIf="i==2">{{'clander.days.tuesday'|translate}}</p>

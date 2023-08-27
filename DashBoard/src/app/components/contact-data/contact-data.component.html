@@ -62,8 +62,8 @@
             <td><input type="text" placeholder="{{'conatactData.id'|translate}}" [(ngModel)]="ID"></td>
             <td><input type="text" placeholder="{{'conatactData.fullName'|translate}}" [(ngModel)]="Name"></td>
             <td><input type="text" placeholder="{{'conatactData.email'|translate}}" [(ngModel)]="Email"></td>
-            <td><input type="text" placeholder="{{'conatactData.days'|translate}}" [(ngModel)]="Email"></td>
-            <td><input type="text" placeholder="{{'conatactData.file'|translate}}" [(ngModel)]="Email"></td>
+            <td><input type="text" placeholder="{{'conatactData.days'|translate}}"></td>
+            <td><input type="text" placeholder="{{'conatactData.file'|translate}}"></td>
         </tr>
         <tr *ngFor="let person of data" cdkDrag>
             <td *ngIf="id">{{ person.id }}</td>

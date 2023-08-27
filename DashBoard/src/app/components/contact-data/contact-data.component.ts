@@ -60,5 +60,8 @@ export class ContactDataComponent {
     }
     this.data.push(obj)
     this.create=false
+    this.ID=''
+    this.Name=''
+    this.Email=''
   }
 }

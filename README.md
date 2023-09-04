@@ -15,6 +15,27 @@ The navbar shows as fixed in a small screen with a button show in the top to ope
 button in the Navbar to translate into Arabic and English
 
 
+## Technology used
+
+Angular CLI
+
+Type script
+
+NGRX Translate
+
+Angular Material
+
+Binding
+
+Drag &Drop
+
+Routing
+
+Template-driven forms
+
+Services
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
@@ -23,4 +44,10 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
+
+ ## Conclusion
+
+ Thank you for visiting my repository and learning more about my project.
+
+If you have any questions or feedback, please don't hesitate to contact me. 
 
